@@ -1,29 +1,63 @@
 // Banco de dados com perguntas e respostas
 const quizData = [
     {
-        question: "Qual é a capital do Brasil?",
-        a: "São Paulo",
-        b: "Rio de Janeiro",
-        c: "Brasília",
-        d: "Salvador",
+        question: "Oque é HTML?",
+        a: "HTML é um software para edição de vídeos e imagens em um computador.",
+        b: "HTML é uma linguagem de programação usada para criar aplicativos móveis e desktop.",
+        c: "HTML (HyperText Markup Language) é uma linguagem de marcação usada para criar e estruturar o conteúdo das páginas web.",
+        d: "HTML é um protocolo de comunicação usado para transmitir dados entre computadores em uma rede.",
         correct: "c"
     },
     {
-        question: "Qual é o maior planeta do Sistema Solar?",
-        a: "Terra",
-        b: "Júpiter",
-        c: "Marte",
-        d: "Saturno",
-        correct: "b"
+        question: "O que é CSS?",
+        a: "  CSS é uma linguagem de programação usada para criar aplicações interativas na web.  ",
+        b: " CSS é um sistema de gerenciamento de banco de dados usado para armazenar informações de usuários.  ",
+        c: "   CSS (Cascading Style Sheets) é uma linguagem usada para definir o estilo e a aparência de páginas web, incluindo layout, cores e fontes. ",
+        d: " CSS é uma ferramenta para compilar código em diferentes linguagens de programação.  ",
+        correct: "c"
     },
     {
-        question: "Quantos continentes existem no mundo?",
-        a: "5",
-        b: "6",
-        c: "7",
-        d: "8",
+        question: "O que é uma variável em programação?",
+        a: "Um espaço de armazenamento para dados que pode ser alterado durante a execução do programa.",
+        b: "Uma variável é uma função que executa cálculos matemáticos complexos.",
+        c: "Uma variável é um tipo de erro que ocorre quando o código não é escrito corretamente.",
+        d: "Uma variável é uma ferramenta física usada para compilar o código-fonte.",
+        correct: "a"
+    },
+    {
+        question: "O que é um script?",
+        a: "Um script é um tipo de software antivírus que protege seu computador contra malware.",
+        b: "Um script é um tipo de hardware que melhora o desempenho gráfico do seu computador.",
+        c: "Um script é um conjunto de instruções escritas em uma linguagem de programação que é executado por um interpretador para realizar tarefas automatizada",
+        d: "Um script é um componente físico de um computador, como um processador ou uma placa de vídeo.",
         correct: "c"
+    },
+    {
+        question: "Qual é a principal função de uma função em programação?",
+        a: "  Uma função é usada para alterar o layout de uma página web.",
+        b: "Uma função é responsável por criar e gerenciar arquivos de configuração.",
+        c: "Uma função é uma ferramenta para editar imagens e vídeos.",
+        d: "Uma função é um bloco de código que realiza uma tarefa específica e pode ser reutilizado em diferentes partes do programa.",
+        correct: "d"
+    },
+    {
+        question: "O que é um loop em programação?",
+        a: " Um loop é um comando que executa tarefas em paralelo em múltiplos computadores.  ",
+        b: " Um loop é uma estrutura de dados que armazena grandes quantidades de texto.  ",
+        c: " Um loop é uma estrutura de controle que permite a repetição de um bloco de código várias vezes até que uma condição seja atendida.  ",
+        d: " Um loop é uma ferramenta que permite a visualização de gráficos e relatórios.  ",
+        correct: "c"
+    },
+    {
+        question: "O que é um if em programação?",
+        a: " Um if é uma estrutura de controle condicional que executa um bloco de código somente se uma condição específica for verdadeira.  ",
+        b: " Um if é uma ferramenta para desenhar gráficos em programas de visualização de dados.  ",
+        c: " Um if é um tipo de banco de dados utilizado para armazenar informações de usuários.  ",
+        d: " Um if é uma biblioteca de código que fornece funções matemáticas avançadas.  ",
+        correct: "a"
     }
+  
+    
 ];
 
 const quiz = document.getElementById('quiz');

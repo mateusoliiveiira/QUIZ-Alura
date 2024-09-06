@@ -104,12 +104,10 @@ function processResults() {
     quizData.forEach((data, index) => {
         const userAnswer = userAnswers[index];
         const isCorrect = userAnswer === data.correct;
-        const correctAnswerText = data[data.correct];
         const answerText = `
             <li>
                 <strong>Pergunta ${index + 1}:</strong> ${data.question}<br>
-                <strong>Resposta sua:</strong> <span class="${isCorrect ? 'correct' : 'incorrect'}">${data[userAnswer]}</span><br>
-                <strong>Resposta correta:</strong> ${correctAnswerText}
+                <strong>Resposta sua:</strong> <span class="${isCorrect ? 'correct' : 'incorrect'}">${data[userAnswer]}</span>
             </li>
         `;
         answersSummary.innerHTML += answerText;
@@ -148,6 +146,40 @@ submitBtn.addEventListener('click', () => {
         }
     }
 });
+// Função para processar as respostas ao final do quiz
+function processResults() {
+    quiz.innerHTML = "";
+    
+    // Calcula a nota em porcentagem
+    const percentage = Math.round((score / quizData.length) * 100);
+    
+    resultsEl.innerHTML = `
+        <h2>Você acertou ${score} de ${quizData.length} perguntas.</h2>
+        <h3>Sua nota: ${percentage}%</h3>
+        <ul id="answers-summary"></ul>
+        <button id="restart">Recomeçar</button>
+    `;
+    
+    const answersSummary = document.getElementById('answers-summary');
+
+    quizData.forEach((data, index) => {
+        const userAnswer = userAnswers[index];
+        const isCorrect = userAnswer === data.correct;
+        const answerText = `
+            <li>
+                <strong>Pergunta ${index + 1}:</strong> ${data.question}<br>
+                <strong>Resposta sua:</strong> <span class="${isCorrect ? 'correct' : 'incorrect'}">${data[userAnswer]}</span>
+            </li>
+        `;
+        answersSummary.innerHTML += answerText;
+    });
+
+    // Adiciona evento ao botão de recomeçar
+    const restartBtn = document.getElementById('restart');
+    restartBtn.addEventListener('click', restartQuiz);
+}
 
 // Carregar o primeiro quiz
 loadQuiz();
+
+

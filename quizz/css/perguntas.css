@@ -18,11 +18,12 @@ body {
     background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0.3));
     padding: 10px;
     border-radius: 15px;
-    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
-    width: 350px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.5);
+    width: 320px;
     text-align: center;
     backdrop-filter: blur(10px); /* Efeito de vidro fosco */
     transition: transform 0.3s ease;
+    
 }
 
 .quiz-container:hover {
@@ -100,6 +101,7 @@ button:hover {
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 2px;
+    margin-top: 20px;
 }
 
 #restart:hover {
@@ -129,7 +131,8 @@ button:hover {
     padding: 10px; /* Reduzido o padding */
     margin-bottom: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    font-size: 0.6em; /* Tamanho da fonte menor */
+    font-size: 0.4em; /* Tamanho da fonte menor */
+    margin-bottom: 10px;
    
 }
 
@@ -139,4 +142,49 @@ button:hover {
     margin-bottom: 5px;
     font-size: 1em; /* Tamanho da fonte menor */
     color: #ff4444; /* Vermelho para perguntas */
+   
+}
+
+
+
+
+/* Estilo para o título na página de resultados */
+#results h2 {
+    display: none; /* Esconde o título */
+}
+
+#results h3 {
+    font-size: 1.25rem; /* Tamanho da fonte para a nota */
+    color: #007bff; /* Cor destacada para a nota */
+    margin-bottom: 10px; /* Espaço abaixo da nota */
+    margin-top: 20px;
+}/* Estilo para a nota final */
+/* Efeito de explosão */
+@keyframes explode {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.5);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(3);
+        opacity: 0;
+    }
+}
+
+.explosion {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff0, #f00);
+    animation: explode 2s forwards;
+    z-index: 1000; /* Certifica-se de que o efeito aparece sobre o restante do conteúdo */
+    display: none; /* Inicialmente escondido */
 }

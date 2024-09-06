@@ -1,0 +1,119 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('../img/fundo-index2.jpeg'); /* Caminho da sua imagem de fundo */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Para fazer o background rolar suavemente */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.quiz-container {
+    background: linear-gradient(145deg, rgba(255, 255, 255, 0.85), rgba(0, 0, 0, 0.3));
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+    width: 350px;
+    text-align: center;
+    backdrop-filter: blur(10px); /* Efeito de vidro fosco */
+    transition: transform 0.3s ease;
+}
+
+.quiz-container:hover {
+    transform: scale(1.05); /* Pequeno zoom quando o usuário passa o mouse */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffeb3b;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.question {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    color: #03a9f4;
+}
+
+label {
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+label:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+
+button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(255, 87, 34, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+button:hover {
+    background-color: #e64a19;
+    box-shadow: 0px 7px 20px rgba(255, 87, 34, 0.6);
+    transform: translateY(-5px); /* Efeito de "flutuar" */
+}
+
+#results {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #ffeb3b;
+}
+#restart {
+    background-color: #03a9f4;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    margin-top: 20px;
+    font-size: 1.2em;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(3, 169, 244, 0.4);
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#restart:hover {
+    background-color: #0288d1;
+    box-shadow: 0px 7px 20px rgba(3, 169, 244, 0.6);
+    transform: translateY(-5px); /* Efeito flutuante */
+}
+.to{
+    font-size: 20px;
+    color: white;
+}
+.ir{
+    margin-top: 30px;
+}
+.log{
+ 
+}

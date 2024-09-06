@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('../img/fundo-index.png'); /* Caminho da sua imagem de fundo */
+    background-image: url('../img/fundo-index2.jpeg'); /* Caminho da sua imagem de fundo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Para fazer o background rolar suavemente */
@@ -106,4 +106,37 @@ button:hover {
     background-color: #0288d1;
     box-shadow: 0px 7px 20px rgba(3, 169, 244, 0.6);
     transform: translateY(-5px); /* Efeito flutuante */
+}
+.correct {
+    color: #4caf50; /* Verde para respostas corretas */
+    font-weight: bold;
+}
+
+.incorrect {
+    color: #f44336; /* Vermelho para respostas incorretas */
+    font-weight: bold;
+}
+/* Estilo do resumo das respostas */
+#answers-summary {
+    list-style-type: none;
+    padding: 0;
+}
+
+#answers-summary li {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #444;
+    border-radius: 10px;
+    padding: 10px; /* Reduzido o padding */
+    margin-bottom: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+    font-size: 0.6em; /* Tamanho da fonte menor */
+   
+}
+
+/* Estilo para perguntas */
+#answers-summary li strong {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 1em; /* Tamanho da fonte menor */
+    color: #ff4444; /* Vermelho para perguntas */
 }

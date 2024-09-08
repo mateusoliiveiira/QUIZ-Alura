@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background-image: url('../img/fundo-index2.jpeg'); /* Caminho da sua imagem de fundo */
+    background-image: url('quizz/img/fundo-index2.jpeg'); /* Caminho da sua imagem de fundo */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Para fazer o background rolar suavemente */
